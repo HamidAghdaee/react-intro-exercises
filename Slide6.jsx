@@ -1,6 +1,6 @@
 //lets create a simple counter.
-//for now let's just focus on reflecting the state in our 
-//app
+//Excercise: wire up the component so that when the user clicks on increment, the counter increments
+
 class Counter extends React.Component{
   constructor(props) {
     super(props);
@@ -11,7 +11,10 @@ class Counter extends React.Component{
 
   render(){
     return (
-      <h1>{this.state.count}</h1>
+      <div>
+        <h1>{this.state.count}</h1>
+        <button type="button">Increment</button>
+      </div>
     )
   }
 }
